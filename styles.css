@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Oswald:wght@200..700&family=Pirata+One&family=Quicksand:wght@300..700&display=swap');
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -10,33 +14,39 @@
     --main-dark-blue:#5e6472;
     --main-grey:#7f7f7f;
     --main-pink:#e68ab3;
-    --main-organge:#e6a772;
+    --main-orange:#e6a772;
+    --main-text: Quicksand;
+    --main-titles: Berkshire Swash;
 }
 
 html{
     font-size: 62.5%;
+    font-family: var(--main-text);
 
 }
+
 
 body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #73d4e5;
+    
 }
 
 header {
+    position: relative;
     background-color: white;
     height: 90px;
     padding: 0px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: black;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 0 10px black;
 }
 
 .logo{
-    width: 200px;
+    width: 150px;
     height: 100%;
     
 }
@@ -52,10 +62,9 @@ header {
 .menu__list{
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 10px;
 
 }
-
 
 a{
     text-decoration: none;
@@ -63,6 +72,27 @@ a{
     font-weight: bold;
     font-size: 1.7rem;
 }
+
+.menu__item{
+
+    padding: 15px;
+
+}
+
+
+.agenda{
+
+    background-color: var(--main-dark-blue);
+    border-radius: 40px;
+    
+} 
+
+.agenda>a{
+
+    color: white;
+
+}
+
 
 footer {
     padding: 60px;
@@ -74,5 +104,91 @@ footer {
 }
 
 footer>p {
-    color:var(--main-light-blue);
+    color:white;
 }
+
+#toggle__menu,
+.menu__icon {
+
+    display: none;
+    width: 50px;
+    height: 100%;
+
+
+}
+
+@media (max-width: 600px) {
+
+
+    .menu {
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        border-radius: 0px 0px 5rem 0px;
+        transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease, border-radius 0.3s ease;
+
+    }
+
+
+
+    .menu__list {
+        width: 100%;
+        height: 20rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        
+
+    }
+
+    .menu__list li {
+        width: 100%; 
+        text-align: center;
+        padding: 1.5rem 0;
+        border-bottom: 1px solid var(--main-dark-blue);
+
+    
+    }
+
+     .menu__list li:last-child {
+        border-bottom: none;
+    }
+
+    .menu__icon {
+
+        display: block;
+        cursor: pointer;
+
+    }
+
+    #toggle__menu:checked ~ .menu{
+        height: 20rem;
+        width: 100%;
+        opacity: 1;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+   
+
+    header {
+        flex-direction: row-reverse;
+        height: 90px;
+        transition: border-radius 0.3s ease;
+
+    }
+
+   header:has(#toggle__menu:checked) {
+        border-radius: 0 0 0 0;
+    }
+
+
+
+}
+
