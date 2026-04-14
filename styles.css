@@ -25,6 +25,11 @@ html{
 
 }
 
+button{
+
+    font-family: var(--main-text);
+}
+
 
 body{
     display: flex;
@@ -44,6 +49,7 @@ header {
     align-items: center;
     border-radius: 0 0 3px 3px;
     box-shadow: 0 0 10px black;
+    z-index: 10;
 }
 
 .logo{
