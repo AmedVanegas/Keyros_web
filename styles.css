@@ -383,9 +383,12 @@ ul>.terminos>li>a:hover{
 
         display: block;
         height: 55%;
+        width: auto;
+    }
+    .logo__mobile>img{
+
         width: 100%;
     }
-
 
     .menu {
         position: absolute;
