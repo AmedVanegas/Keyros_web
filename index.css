@@ -364,6 +364,7 @@ h1 {
     font-weight: bold;
     text-decoration: none;
     transition: all 0.2s;
+    width: fit-content;
 
 
 }
