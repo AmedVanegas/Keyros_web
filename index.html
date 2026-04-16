@@ -1,369 +1,375 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Keyros</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" type="image/png" href="/imgs/page__icon.png">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/png" href="/imgs/page__icon.png" />
+  </head>
 
-<body>
+  <body>
+    <header class="header__container">
+      <div class="logo">
+        <img src="/imgs/logo_main.svg" alt="" class="logo__img" />
+      </div>
 
-    <header class="header__container ">
+      <div class="logo logo__mobile">
+        <img src="/imgs/page__icon.png" alt="" class="logo__img" />
+      </div>
 
+      <input type="checkbox" id="toggle__menu" />
+      <label for="toggle__menu">
+        <img class="menu__icon" src="/imgs/bars-solid-full.svg" alt="" />
+      </label>
 
-        <div class="logo">
-            <img src="/imgs/logo_main.svg" alt="" class="logo__img">
-        </div>
-
-        <div class=" logo logo__mobile"><img src="/imgs/page__icon.png" alt="" class="logo__img">
-        </div>
-
-        <input type="checkbox" id="toggle__menu">
-        <label for="toggle__menu">
-            <img class="menu__icon" src="/imgs/bars-solid-full.svg" alt="">
-        </label>
-
-        <nav class="menu">
-            <ul class="menu__list">
-                <li class="menu__item"><a href="">Nosotros</a></li>
-                <li class="menu__item"><a href="">Servicios</a></li>
-                <li class="menu__item agenda"><a href="">Agenda Ahora</a></li>
-            </ul>
-        </nav>
-
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Inicio</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#servicios">Servicios</a>
+          </li>
+          <li class="menu__item agenda">
+            <a class="menu__link" href="form.html">Agenda Ahora</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
+      <section class="container__main__page background__gradient1">
+        <div class="main__title">
+          <div class="floating__text">
+            <p>Bienestar integral</p>
+          </div>
 
-        <section class="container__main__page background__gradient1">
+          <h1>Transforma mente y cuerpo</h1>
+          <div class="menu__buttons">
+            <p class="description__text">
+              Descubre un espacio dedicado a tu sanación emocional, donde la
+              relajación y la conexión interior son nuestra prioridad.
+            </p>
 
+            <a href="/form.html" class="start">
+              <p>Comienza Hoy </p>
+            </a>
+            <a href="/servicios.html" class="services">
+              <p>Nuestros Servicios</p>
+            </button></a>
+          </div>
+        </div>
 
+        <div class="main__image">
+          <img src="/imgs/contraluz-silueta-atardecer.jpg" alt="" />
 
-            <div class="main__title">
-
-                <div class="floating__text">
-                    <p><img src="" alt=""> Bienestar integral</p>
-                </div>
-
-                <h1>Transforma mente y cuerpo </h1>
-                <div class="menu__buttons">
-
-                    <p class="description__text">Descubre un espacio dedicado a tu sanación emocional, donde la
-                        relajación y la conexión interior
-                        son nuestra prioridad.</p>
-
-                    <button class="start">
-                        <p>Comienza Hoy</p>
-                    </button>
-                    <button class="services">
-                        <p>Nuestros Servicios</p>
-                    </button>
-
-
-                </div>
+          <div class="float__card">
+            <div class="float__card__icon">
+              <img src="/imgs/leaf-svgrepo-com.svg" alt="" />
             </div>
+            <div>
+              <p class="float__card__label">Agenda hoy</p>
+              <p class="float__card__texto">30% de Descuento</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="main__image">
+      <section id="servicios" class="services__header">
+        <p class="services__text">Nuestros Servicios</p>
 
-                <img src="/imgs/contraluz-silueta-atardecer.jpg" alt="">
+        <h2 class="services__title">
+          Descubre el poder de <br />
+          conectar contigo mismo
+        </h2>
 
-                <div class="float__card">
-                    <div class="float__card__icon">
-                        <img src="/imgs/leaf-svgrepo-com.svg" alt="">
-                    </div>
-                    <div>
-                        <p class="float__card__label">Agenda hoy</p>
-                        <p class="float__card__texto">30% de Descuento</p>
-                    </div>
+        <p class="services__subtitle">
+          En Keyros, diseñamos experiencias que te guían hacia un estado de
+          equilibrio total. Cada sesión es un viaje hacia tu bienestar integral.
+        </p>
+      </section>
 
+      <section class="cards__section background__gradient2">
+        <div class="service__card">
+          <div class="card__icon card__icon__blue">
+            <img class="blue" src="/imgs/star-alt-4-svgrepo-com.svg" alt="" />
+          </div>
 
+          <h3 class="card__title">Reflexología con Cristales</h3>
+
+          <p class="card__description">
+            Conoce todos los beneficios que trae la reflexología a otro nivel.
+            Equilibra tu energía y libera tensiones acumuladas a través de
+            nuestra técnica especializada.
+          </p>
+
+          <a href="/servicios.html#1" class="card__link link__color__blue">Conoce más →</a>
+        </div>
+
+        <div class="service__card">
+          <div class="card__icon card__icon__pink">
+            <img class="pink" src="/imgs/heart-svgrepo-com.svg" alt="" />
+          </div>
+
+          <h3 class="card__title">Sanación Emocional</h3>
+
+          <p class="card__description">
+            Vive una experiencia de relajación y libérate del estrés. Te
+            acompañamos a procesar y soltar emociones estancadas para que fluyas
+            con la vida.
+          </p>
+
+          <a href="/servicios.html#2" class="card__link link__color__pink">Conoce más →</a>
+        </div>
+
+        <div class="service__card">
+          <div class="card__icon card__icon__orange">
+            <img class="orange" src="/imgs/leaf-svgrepo-com.svg" alt="" />
+          </div>
+
+          <h3 class="card__title">Cambio de Creencias</h3>
+
+          <p class="card__description">
+            No dejes que tu mente te limite. Te acompañamos a transformar tus
+            creencias limitantes para que tengas una vida verdaderamente plena y
+            abundante.
+          </p>
+
+          <a href="/servicios.html#3" class="card__link link__color__orange">Conoce más →</a>
+        </div>
+      </section>
+
+      <section id="beneficios" class="benefits__section">
+        <div class="benefits__text">
+          <h2 class="benefits__title">
+            ¿Quieres conectar <br />
+
+            <span class="benefits__title__color">contigo mismo?</span>
+          </h2>
+
+          <p class="benefits__description">
+            En Keyros te invitamos a conocer y disfrutar de los beneficios de la
+            reflexología a otro nivel. Sumérgete en un oasis de paz donde cada
+            detalle está diseñado para tu confort y restauración.
+          </p>
+
+          <ul class="benefits__list">
+            <li class="benefit__item">
+              <span class="benefit__dot"></span>
+              Reducción inmediata del estrés
+            </li>
+            <li class="benefit__item">
+              <span class="benefit__dot"></span>
+              Mayor claridad mental y enfoque
+            </li>
+            <li class="benefit__item">
+              <span class="benefit__dot"></span>
+              Equilibrio de tus centros energéticos
+            </li>
+            <li class="benefit__item">
+              <span class="benefit__dot"></span>
+              Acompañamiento profesional y cálido
+            </li>
+          </ul>
+           <a  href="/form.html"><button class="start space">Pide tu cita ahora y obtén 30% off</button></a>
+        </div>
+        <div class="benefits__img">
+          <img src="/imgs/señora_mirando_el_sol_relajada.jpg" alt="" />
+        </div>
+      </section>
+
+      <section class="mind__section">
+        <div class="mind__imgs">
+          <div class="mind__img mind__img__1">
+            <img src="imgs/mano_sostiene_cristales_real.webp" alt="" />
+          </div>
+
+          <div class="mind__img mind__img__2">
+            <img src="imgs/paz_persona_libre.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="mind__content">
+          <h2 class="mind__title">¡No dejes que tu mente te limite!</h2>
+
+          <p class="mind__text">
+            La transformación verdadera comienza desde adentro. Al cambiar tu
+            perspectiva y soltar las cargas emocionales, abres la puerta a un
+            sinfín de posibilidades.
+          </p>
+
+          <div class="testimonio">
+            <div class="testimonial__separator"></div>
+
+            <div class="testimonial__text">
+              <p class="testimonial__opinion">
+                "Desde mi primera sesión en Keyros, sentí un cambio profundo en
+                mi energía. La reflexología con cristales es una experiencia que
+                todos deberían vivir."
+              </p>
+              <div class="testimonial__person">
+                <img
+                  src="/imgs/persona_testimonio.JPG"
+                  alt=""
+                  class="testimonial__img"
+                />
+                <div>
+                  <p class="name">Paula Rodríguez</p>
+
+                  <p class="client">Cliente</p>
                 </div>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-
-
-
-        </section>
-
-        <section class="services__header">
-
-            <p class="services__text">Nuestros Servicios</p>
-
-            <h2 class="services__title">Descubre el poder de <br> conectar contigo mismo</h2>
-
-            <p class="services__subtitle">En Keyros, diseñamos experiencias que te guían hacia un estado de equilibrio
-
-                total. Cada sesión es un viaje hacia tu bienestar integral.</p>
-
-        </section>
-
-
-        <section class="cards__section background__gradient2">
-
-            <div class="service__card">
-                <div class="card__icon card__icon__blue">
-                    <img class="blue" src="/imgs/star-alt-4-svgrepo-com.svg" alt="">
-                </div>
-
-                <h3 class="card__title">Reflexología con Cristales</h3>
-
-                <p class="card__description">Conoce todos los beneficios que trae la reflexología a otro nivel.
-                    Equilibra tu energía y libera tensiones acumuladas a través de nuestra técnica especializada.</p>
-
-                <a href="" class="card__link  link__color__blue">Conoce más →</a>
-            </div>
-
-            <div class="service__card">
-                <div class="card__icon card__icon__pink">
-                    <img class="pink" src="/imgs/heart-svgrepo-com.svg" alt="">
-                </div>
-
-                <h3 class="card__title">Sanación Emocional</h3>
-
-                <p class="card__description">Vive una experiencia de relajación y libérate del estrés. Te acompañamos a
-                    procesar y soltar emociones estancadas para que fluyas con la vida.</p>
-
-                <a href="" class="card__link  link__color__pink">Conoce más →</a>
-            </div>
-
-            <div class="service__card">
-                <div class="card__icon card__icon__orange">
-                    <img class="orange" src="/imgs/leaf-svgrepo-com.svg" alt="">
-                </div>
-
-                <h3 class="card__title">Cambio de Creencias</h3>
-
-                <p class="card__description">No dejes que tu mente te limite. Te acompañamos a transformar tus creencias
-                    limitantes para que tengas una vida verdaderamente plena y abundante.</p>
-
-                <a href="" class="card__link link__color__orange">Conoce más →</a>
-            </div>
-
-        </section>
-
-        <section class="benefits__section">
-
-
-            <div class="benefits__text">
-
-                <h2 class="benefits__title">
-
-                    ¿Quieres conectar <br>
-
-                    <span class="benefits__title__color">contigo mismo?</span>
-
-                </h2>
-
-                <p class="benefits__description">
-                    En Keyros te invitamos a conocer y disfrutar de los beneficios de la
-                    reflexología a otro nivel. Sumérgete en un oasis de paz donde cada
-                    detalle está diseñado para tu confort y restauración.
-                </p>
-
-                <ul class="benefits__list">
-
-                    <li class="benefit__item">
-
-                        <span class="benefit__dot"></span>
-                        Reducción inmediata del estrés
-
-                    </li>
-                    <li class="benefit__item">
-
-                        <span class="benefit__dot"></span>
-                        Mayor claridad mental y enfoque
-
-                    </li>
-                    <li class="benefit__item">
-
-                        <span class="benefit__dot"></span>
-                        Equilibrio de tus centros energéticos
-
-                    </li>
-                    <li class="benefit__item">
-
-                        <span class="benefit__dot"></span>
-                        Acompañamiento profesional y cálido
-
-                    </li>
-                </ul>
-                <button class="start">
-                    Pide tu cita ahora y obtén 30% off
-                </button>
-            </div>
-            <div class="benefits__img">
-                <img src="/imgs/señora_mirando_el_sol_relajada.jpg" alt="">
-            </div>
-        </section>
-
-        <section class="mind__section">
-
-            <div class="mind__imgs">
-
-                <div class="mind__img mind__img__1">
-                    <img src="imgs/mano_sostiene_cristales_real.webp" alt="">
-                </div>
-
-                <div class="mind__img mind__img__2">
-                    <img src="imgs/paz_persona_libre.jpg" alt="">
-                </div>
-
-            </div>
-
-            <div class="mind__content">
-
-                <h2 class="mind__title">¡No dejes que tu mente te limite!</h2>
-
-                <p class="mind__text">
-                    La transformación verdadera comienza desde adentro. Al cambiar tu
-                    perspectiva y soltar las cargas emocionales, abres la puerta a un
-                    sinfín de posibilidades.
-                </p>
-
-                <div class="testimonio">
-
-                    <div class="testimonial__separator"></div>
-
-                    <div class="testimonial__text">
-
-                        <p class="testimonial__opinion">
-                            "Desde mi primera sesión en Keyros, sentí un cambio profundo
-                            en mi energía. La reflexología con cristales es una experiencia
-                            que todos deberían vivir."
-                        </p>
-                        <div class="testimonial__person">
-                            <img src="/imgs/persona_testimonio.JPG" alt="" class="testimonial__img">
-                            <div>
-                                <p class="name">Paula Rodríguez</p>
-
-                                <p class="client">Cliente</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="call__section">
-            <div class="call__background"></div>
-            <div class="call__text">
-                <h2 class="call__title">Empieza tu viaje hacia <br> la sanación emocional</h2>
-                <p class="call__subtitle">
-                    Agenda tu cita hoy y da el primer paso para liberar el estrés y
-                    transformar tu mente y cuerpo. Nuestro equipo te espera.
-                </p>
-                <div class="call__buttons">
-                    <a href="https://wa.me/573125138624" target="_blank" class="call__button call__button__whats">
-                        <span class="call__dot__green"></span>
-                        WhatsApp: 312 513 8624
-                    </a>
-                    <a href="tel:+573144858524" class="call__button call__button__phone">
-                        Llamar: 314 485 8524
-                    </a>
-                </div>
-            </div>
-        </section>
-
+      <section id="contacto" class="call__section">
+        <div class="call__background"></div>
+        <div class="call__text">
+          <h2 class="call__title">
+            Empieza tu viaje hacia <br />
+            la sanación emocional
+          </h2>
+          <p class="call__subtitle">
+            Agenda tu cita hoy y da el primer paso para liberar el estrés y
+            transformar tu mente y cuerpo. Nuestro equipo te espera.
+          </p>
+          <div class="call__buttons">
+            <a
+              href="https://wa.me/573125138624"
+              target="_blank"
+              class="call__button call__button__whats"
+            >
+              <span class="call__dot__green"></span>
+              WhatsApp: 312 513 8624
+            </a>
+            <a
+              href="tel:+573144858524"
+              class="call__button call__button__phone"
+            >
+              Llamar: 314 485 8524
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="footer__text">
-            <div class="footer__text__section">
-                <div class="white__logo"><img src="/imgs/logo_main.svg"></div>
-                <div class="footer__paragraph">
-                    <p>Transforma tu mente y cuerpo. Te acompañamos a cambiar tus creencias limitantes para que tengas
-                        una vida plena.</p>
-                </div>
-
-            </div>
-            <div class="footer__text__section">
-                <div class="footer__section__title">
-                    <h3>Enlaces Rapidos</h3>
-                    <nav>
-                        <ul class="footer__list">
-
-                            <li class="footer__list__item"><a href="">Inicio</a></li>
-
-                            <li class="footer__list__item"><a href="">Nuestros Servicos</a></li>
-
-                            <li class="footer__list__item"><a href="">Beneficios</a></li>
-
-                            <li class="footer__list__item"><a href="">Contacto</a></li>
-
-                        </ul>
-                    </nav>
-                </div>
-
-            </div>
-            <div class="footer__text__section">
-                <div class="footer__section__title">
-                    <h3>Contacto</h3>
-                </div>
-                <nav>
-
-                    <ul class="footer__list">
-                        <li class="footer__list__item">
-                            <img src="/imgs/phone-pause-svgrepo-com.svg" alt="" class="footer__link__icon">
-                            <div class="numbers"><a href="">
-                                312 513 8624
-                            </a>
-                            <br>
-                            <a href="">
-                                314 485 8524
-                            </a></div>
-                        </li>
-
-                        <li class="footer__list__item"><img src="/imgs/mail-svgrepo-com.svg" alt="" class="footer__link__icon"><a href="">hola@keyros.com</a></li>
-
-                        <li class="footer__list__item"><img src="/imgs/map-pin-alt-svgrepo-com.svg" alt="" class="footer__link__icon"><a href="">calle 79</a></li>
-
-                    </ul>
-
-                </nav>
-
-            </div>
-            <div class="footer__text__section">
-                <div class="footer__section__title">
-                    <h3>Siguenos</h3>
-                </div>
-
-                <p class="footer__paragraph">Únete a nuestra comunidad y recibe consejos diarios de bienestar.</p>
-
-                <div class="footer__socials">
-
-                    <div class="footer_socials_img"><img class="footer__link__icon" src="imgs/instagram-svgrepo-com.svg" alt=""></div>
-                    <div class="footer_socials_img"><img class="footer__link__icon" src="imgs/facebook-svgrepo-com.svg" alt=""></div>
-
-
-                </div>
-
-
-
-            </div>
-
+      <div class="footer__text">
+        <div class="footer__text__section">
+          <div class="white__logo"><img src="/imgs/logo_main.svg" /></div>
+          <div class="footer__paragraph">
+            <p>
+              Transforma tu mente y cuerpo. Te acompañamos a cambiar tus
+              creencias limitantes para que tengas una vida plena.
+            </p>
+          </div>
         </div>
-        <div class="footer__brand">
+        <div class="footer__text__section">
+          <div class="footer__section__title">
+            <h3>Enlaces Rapidos</h3>
+            <nav>
+              <ul class="footer__list">
+                <li class="footer__list__item"><a href="#">Inicio</a></li>
 
-            <p class="brand">© 2026 Keyros - Transforma mente y cuerpo. Todos los derechos reservados.</p>
+                <li class="footer__list__item">
+                  <a href="#servicios">Nuestros Servicos</a>
+                </li>
 
-            <ul class="terminos">
-                <li><a href="">Terminos de servicio</a></li>
-                <li><a href="">Politica de Privacidad</a></li>
+                <li class="footer__list__item">
+                  <a href="#beneficios">Beneficios</a>
+                </li>
+
+                <li class="footer__list__item">
+                  <a href="#contacto">Contacto</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="footer__text__section">
+          <div class="footer__section__title">
+            <h3>Contacto</h3>
+          </div>
+          <nav>
+            <ul class="footer__list">
+              <li class="footer__list__item">
+                <img
+                  src="/imgs/phone-pause-svgrepo-com.svg"
+                  alt=""
+                  class="footer__link__icon"
+                />
+                <div class="numbers">
+                  <a href=""> 312 513 8624 </a>
+                  <br />
+                  <a href=""> 314 485 8524 </a>
+                </div>
+              </li>
+
+              <li class="footer__list__item">
+                <img
+                  src="/imgs/mail-svgrepo-com.svg"
+                  alt=""
+                  class="footer__link__icon"
+                /><a href="">hola@keyros.com</a>
+              </li>
+
+              <li class="footer__list__item">
+                <img
+                  src="/imgs/map-pin-alt-svgrepo-com.svg"
+                  alt=""
+                  class="footer__link__icon"
+                /><a
+                  target="_blank"  href="https://www.google.com/maps/place/Cl.+79+%23+14-+33,+Bogot%C3%A1/@4.664915,-74.0572863,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f9a5f12ed7e97:0x460403b6933eddb8!8m2!3d4.664915!4d-74.0572863!16s%2Fg%2F11m6qz9rjn?entry=ttu&g_ep=EgoyMDI2MDQxNC4wIKXMDSoASAFQAw%3D%3D"
+                  >Calle 79 N° 14 - 33 oficina 202</a
+                >
+              </li>
             </ul>
-
+          </nav>
         </div>
+        <div class="footer__text__section">
+          <div class="footer__section__title">
+            <h3>Siguenos</h3>
+          </div>
 
+          <p class="footer__paragraph">
+            Únete a nuestra comunidad y recibe consejos diarios de bienestar.
+          </p>
 
+          <div class="footer__socials">
+            <div class="footer_socials_img">
+              <a href="https://www.instagram.com/keyros_transforma/" target="_blank">
+                <img
+                  class="footer__link__icon"
+                  src="imgs/instagram-svgrepo-com.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="footer_socials_img">
+              <img
+                class="footer__link__icon"
+                src="imgs/facebook-svgrepo-com.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__brand">
+        <p class="brand">
+          © 2026 Keyros - Transforma mente y cuerpo. Todos los derechos
+          reservados.
+        </p>
 
-
+        <ul class="terminos">
+          <li><a href="">Terminos de servicio</a></li>
+          <li><a href="">Politica de Privacidad</a></li>
+        </ul>
+      </div>
     </footer>
-
-
-</body>
-
+  </body>
 </html>
