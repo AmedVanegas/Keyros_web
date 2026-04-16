@@ -205,7 +205,7 @@
 
 h1 {
 
-    font-size: clamp(5.5rem, 10vw, 9rem);
+    font-size: clamp(5.5rem, 10vw, 8.5rem);
     font-weight: 500;
     width: 100%;
     background: linear-gradient(to bottom, var(--main-dark-blue), var(--main-blue));
