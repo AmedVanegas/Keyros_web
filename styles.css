@@ -24,6 +24,9 @@ html {
     font-family: var(--main-text);
 
 }
+ul{
+    list-style: none;
+}
 
 button {
 
@@ -135,8 +138,8 @@ h1 {
 
 
 footer {
-    padding: 60px;
-    background-color: var(--main-grey);
+    padding: 30px 10px;
+    background-color: var(--main-dark-blue);
     text-align: center;
     margin-top: auto;
     border-radius: 5px 5px 0 0;
@@ -156,6 +159,166 @@ footer>p {
 
 
 }
+
+
+.footer__text {
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+    gap: 10px;
+
+}
+
+
+
+.white__logo {
+
+    
+    background-color: white;
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+    padding: 10px 10px;
+    
+
+
+}
+
+.white__logo>img{
+
+    width: 100%;
+
+
+
+}
+
+.footer__text__section {
+    width: 25%;
+    color: var(--main-light-blue);
+    padding: 20px 10px;
+
+}
+
+
+.footer__section__title, .footer__section__title>h3{
+
+    font-family: var(--main-titles);
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: left;
+
+}
+
+.footer__paragraph>p, .footer__list__item>div>a,.footer__list__item>a, .footer__text__section>p{
+
+    font-family: var(--main-text);
+    color: rgba(255, 255, 255, 0.712);
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: left;
+
+}
+
+.footer__list__item{
+    text-align: left;
+    transition: all 0.2s;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+
+}
+
+.footer__list__item>a:hover,.footer__list__item>div>a:hover{
+
+    color: var(--main-blue);
+}
+
+.footer__paragraph>p, .footer__text__section>p{
+
+    font-size: 1.7rem;
+
+
+
+}
+
+ .footer__paragraph{
+
+    margin-top: 20px;
+    
+
+
+
+}
+
+.footer__list{
+
+    list-style: none;
+    
+}
+.footer__link__icon{
+
+    width: 20px;
+    transition: all 0.2s;
+    
+
+
+}
+.footer__link__icon:hover{
+
+    transform: scale(1.1);
+
+
+}
+
+.footer__socials{
+    margin-top: 30PX;
+    margin-left: 10px;
+    display: flex;
+    gap: 15px;
+}
+.footer_socials_img{
+
+    transform: scale(1.1);
+}
+.footer_socials_img:hover{
+
+    transform: scale(1.1);
+}
+
+.footer__brand{
+    border-top: rgba(255, 255, 255, 0.531) 1px solid;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.terminos>li>a{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 400;
+
+}
+
+ul>.terminos>li>a:hover{
+
+    color: var(--main-blue);
+
+
+}
+
+.brand{
+
+    color: white;
+}
+
+.terminos{
+    display: flex;
+    gap: 30px;
+}
+
 
 @media (max-width: 600px) {
 
