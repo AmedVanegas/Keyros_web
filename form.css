@@ -305,3 +305,14 @@ button:hover {
         padding: 25px 20px;
     }
 }
+
+@media (max-width: 600px) {
+
+    .form__main {
+    margin-top: 70px;
+}
+
+
+
+
+}
