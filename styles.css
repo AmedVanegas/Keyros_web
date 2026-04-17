@@ -134,9 +134,21 @@ a{
 
 }
 
-.agenda>a {
+.menu__item.agenda{
 
+    padding: 0px;
+    width: fit-content;
+    height: fit-content;
+
+
+}
+
+.agenda>a {
+    display: block;
     color: white;
+    padding: 15px 20px;
+   
+    
 
 
 }
@@ -408,7 +420,7 @@ ul>.terminos>li>a:hover{
     .menu__list {
         width: 100%;
         gap: 0;
-        height: 20rem;
+        height: 17.5rem;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -443,7 +455,7 @@ ul>.terminos>li>a:hover{
     }
 
     #toggle__menu:checked~.menu {
-        height: 20rem;
+        height: 17.5rem;
         width: 100%;
         opacity: 1;
         border-radius: 0px 0px 0px 0px;
@@ -463,9 +475,32 @@ ul>.terminos>li>a:hover{
         border-radius: 0 0 0 0;
     }
 
+    .menu__item.agenda{
+        width: 100%;
+        border-radius: 0;
 
+
+    }
+
+    .agenda>a, .menu__link{
+        
+        text-align: center;
+        width: 100%;
+        
+        
     
 
+    }
+
+    .agenda>a{
+
+        height: 65px;
+
+
+
+    }
+
+    
 
 
 }
